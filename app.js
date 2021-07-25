@@ -1,7 +1,6 @@
 require('dotenv').config()
 const express = require('express');
 const cors = require('cors');
-const { ESRCH } = require('constants');
 
 const app = express();
 
@@ -40,3 +39,5 @@ app.get('/data', (req, res) => {
         res.status(500).json({ error: err.message });
     }
 })
+
+module.exports = app;
