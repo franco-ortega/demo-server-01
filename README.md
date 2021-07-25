@@ -7,7 +7,7 @@ This server has 3 routes. Try them out yourself!
 https://demo-server-01-express-sql.herokuapp.com
 \
 \
-**Endpoints**
+**Routes**
 1. /cats
 2. /meow
 3. /kitten
