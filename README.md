@@ -9,8 +9,8 @@ https://demo-server-01-express-sql.herokuapp.com
 \
 **Routes**
 1. /cats
-2. /meow
-3. /kitten
+2. /kitten
+3. /meow
 
 \
 Server setup process:

@@ -33,15 +33,6 @@ app.get('/cats', (req, res) => {
     }
 })
 
-app.get('/meow', (req, res) => {
-    try {
-        res.send('Meeeeeoooooowwwww!');
-    }
-    catch(err) {
-        res.status(500).json({ error: err.message });
-    }
-});
-
 app.get('/kitten', (req, res) => {
     try {
         res.send(
@@ -57,6 +48,15 @@ app.get('/kitten', (req, res) => {
                 </html>
             `
         );
+    }
+    catch(err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+app.get('/meow', (req, res) => {
+    try {
+        res.send('Meeeeeoooooowwwww!');
     }
     catch(err) {
         res.status(500).json({ error: err.message });
