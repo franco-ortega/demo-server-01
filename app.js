@@ -8,16 +8,7 @@ app.use(cors());
 
 console.log('This is the app!');
 
-app.get('/hello', (req, res) => {
-    try {
-        res.send('hello there!');
-    }
-    catch(err) {
-        res.status(500).json({ error: err.message });
-    }
-});
-
-app.get('/data', (req, res) => {
+app.get('/cats', (req, res) => {
     try {
         res.json({
             name: 'fluffy',
@@ -30,6 +21,10 @@ app.get('/data', (req, res) => {
                 {
                 name: 'bille',
                 weight: 8
+                },
+                {
+                name: 'po',
+                weight: 7
                 }
             ]
         });
@@ -37,5 +32,35 @@ app.get('/data', (req, res) => {
         res.status(500).json({ error: err.message });
     }
 })
+
+app.get('/meow', (req, res) => {
+    try {
+        res.send('Meeeeeoooooowwwww!');
+    }
+    catch(err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+app.get('/kitten', (req, res) => {
+    try {
+        res.send(
+            `<!DOCTYPE>
+                <html>
+                    <head>
+                        <title>Kitten</title>
+                    </head>
+                    <body>
+                        <h1 style="color:grey">Kitten!</h1>
+                        <img src="https://placekitten.com/500/600" alt="grey kitten">
+                    </body>
+                </html>
+            `
+        );
+    }
+    catch(err) {
+        res.status(500).json({ error: err.message });
+    }
+});
 
 module.exports = app;
