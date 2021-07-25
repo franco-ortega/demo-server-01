@@ -32,6 +32,10 @@ app.get('/data', (req, res) => {
                 {
                 name: 'bille',
                 weight: 8
+                },
+                {
+                name: 'po',
+                weight: 7
                 }
             ]
         });
