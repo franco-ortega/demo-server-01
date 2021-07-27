@@ -4,7 +4,7 @@ This server has 3 routes. Try them out yourself!
 \
 \
 **URL** \
-https://demo-server-01-express.herokuapp.com/
+https://demo-server-01-express.herokuapp.com
 \
 \
 **Routes**
